@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/plus1"
+            style="@style/PlusButtons"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="41dp"
+            android:layout_marginLeft="41dp"
+            android:layout_marginBottom="199dp"
+            android:background="@drawable/button_background"
+            android:onClick="increaseScore1"
+            android:tint="@drawable/buttonstate"/>
+
+        <ImageButton
+            android:id="@+id/minus1"
+            style="@style/MinusButtons"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="42dp"
+            android:layout_marginRight="42dp"
+            android:layout_marginBottom="199dp"
+            android:background="@drawable/button_background"
+            android:onClick="decreaseScore1"
+            android:tint="@drawable/buttonstate"/>
+
+        <TextView
+            android:id="@+id/team1"
+            style="@style/ScoreText1"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="73dp"
+            android:text="@string/team_1"></TextView>
+        <TextView
+            android:id="@+id/scoreView1"
+            style="@style/ScoreText2"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="161dp"
+            android:layout_marginBottom="115dp"
+            android:text="@string/_0b"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/plus2"
+            style="@style/PlusButtons"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="42dp"
+            android:layout_marginLeft="42dp"
+            android:layout_marginEnd="240dp"
+            android:layout_marginRight="240dp"
+            android:layout_marginBottom="199dp"
+            android:background="@drawable/button_background"
+            android:onClick="increaseScore2"
+            android:tint="@drawable/buttonstate"/>
+
+        <ImageButton
+            android:id="@+id/minus2"
+            style="@style/MinusButtons"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="41dp"
+            android:layout_marginRight="41dp"
+            android:layout_marginBottom="199dp"
+            android:background="@drawable/button_background"
+            android:onClick="decreaseScore2"
+            android:tint="@drawable/buttonstate"/>
+
+        <TextView
+            android:id="@+id/team2"
+            style="@style/ScoreText1"
+            android:text="@string/team_2" />
+
+        <TextView
+            android:id="@+id/scoreView2"
+            style="@style/ScoreText2"
+            android:layout_marginTop="161dp"
+            android:layout_marginBottom="115dp"
+            android:text="@string/_0b" />
+    </RelativeLayout>
+</LinearLayout>
